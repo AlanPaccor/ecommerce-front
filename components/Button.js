@@ -15,6 +15,7 @@ export const ButtonStyle = css`
     height: 16px;
     margin-right: 5px;
   }
+  
   ${props => props.block && css`
     display: block;
     width: 100%;
@@ -50,6 +51,28 @@ export const ButtonStyle = css`
   ${props => props.size === 'l' && css`
     font-size:1.2rem;
     padding: 10px 20px;
+    svg{
+      height: 20px;
+    }
+    `}
+  ${props => props.size === 's' && css`
+  border: 0;
+  font-size: .8rem; /* Adjust the font size to make it smaller */
+  padding: 5px 4.5px; /* Adjusted padding for a smaller size */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+    svg{
+      height: 20px;
+    }
+  `}
+  ${props => props.size === 's2' && css`
+  border: 0;
+  font-size: .8rem; /* Adjust the font size to make it smaller */
+  padding: 5px 6px; /* Adjusted padding for a smaller size */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
     svg{
       height: 20px;
     }
